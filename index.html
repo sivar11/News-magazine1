@@ -591,7 +591,7 @@
             }
 
             // تحميل إعلان المكافآت
-            loadRewardedAd() {
+            loadRewardedAd(ca-app-pub-9157592815438447/5012176538) {
                 try {
                     // في التطبيق الحقيقي، استخدم AdMob SDK
                     this.rewardedAdLoaded = true;
@@ -607,12 +607,12 @@
                     document.getElementById('interstitialAd').style.display = 'flex';
                     console.log('تم عرض إعلان الفاصل');
                 } else {
-                    console.log('إعلان الفاصل غير متاح');
+                    console.log('ca-app-pub-9157592815438447/3239929862');
                 }
             }
 
             // إظهار إعلان المكافآت
-            showRewardedAd() {
+            showRewardedAd(ca-app-pub-9157592815438447/5012176538) {
                 if (this.rewardedAdLoaded) {
                     showToast('🎁 مشاهدة إعلان المكافآت... (محاكاة)');
                     // محاكاة مشاهدة الإعلان
@@ -620,12 +620,12 @@
                         this.onRewardedAdComplete();
                     }, 3000);
                 } else {
-                    showToast('إعلان المكافآت غير متاح حالياً');
+                    showToast('ca-app-pub-9157592815438447/5012176538');
                 }
             }
 
             // عند اكتمال مشاهدة إعلان المكافآت
-            onRewardedAdComplete() {
+            onRewardedAdComplete(ca-app-pub-9157592815438447/5012176538) {
                 showToast('🎉 تهانينا! حصلت على محتوى مجاني!');
                 // إضافة المكافأة للمستخدم
                 this.giveReward();
@@ -653,17 +653,17 @@
         }
 
         // إنشاء مدير الإعلانات
-        const adMobManager = new AdMobManager();
+        const adMobManager = new AdMobManager(ca-app-pub-9157592815438447/5012176538);
 
         // إغلاق إعلان الفاصل
         function closeInterstitialAd() {
             document.getElementById('interstitialAd').style.display = 'none';
-            adMobManager.loadInterstitialAd(); // إعادة تحميل للاستخدام التالي
+            adMobManager.loadInterstitialAd(ca-app-pub-9157592815438447/5012176538); // إعادة تحميل للاستخدام التالي
         }
 
         // إظهار إعلان المكافآت
-        function showRewardedAd() {
-            adMobManager.showRewardedAd();
+        function showRewardedAd(ca-app-pub-9157592815438447/5012176538) {
+            adMobManager.showRewardedAd(ca-app-pub-9157592815438447/5012176538);
         }
 
         // بيانات المقالات
@@ -811,7 +811,7 @@
 
         // معالجة أخطاء الإعلانات
         window.addEventListener('error', function(e) {
-            if (e.target.tagName === 'INS' && e.target.className === 'adsbygoogle') {
+            if (e.target.tagName === 'INS' && e.target.className === 'ca-app-pub-9157592815438447/3239929862') {
                 console.log('فشل تحميل إعلان AdMob:', e.target);
                 // إظهار إعلان بديل أو رسالة
                 e.target.style.display = 'none';
